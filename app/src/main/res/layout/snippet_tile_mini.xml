@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fefefe"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="56dp">
+
+
+    <TextView
+        android:id="@+id/top_title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#202020"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/top_story_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="A material metaphor is the unifying theory of a rationalized space and a system of motion." />
+
+    <TextView
+        android:id="@+id/top_excerpt_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/top_title_text_view"
+        app:layout_constraintRight_toRightOf="@+id/top_title_text_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508"
+        tools:text="A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet
+                technologically advanced and open to imagination and magic.\n" />
+
+
+    <ImageView
+        android:id="@+id/top_story_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/top_story_image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="100dp"
+        tools:layout_conversion_absoluteWidth="100dp"
+        tools:layout_conversion_absoluteX="268dp"
+        tools:layout_conversion_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-1dp"
+        android:text="2 hrs ago"
+        app:layout_constraintBaseline_toBaselineOf="@+id/top_author_text_view"
+        app:layout_constraintRight_toRightOf="@+id/top_excerpt_text_view"
+        tools:layout_conversion_absoluteHeight="16dp"
+        tools:layout_conversion_absoluteWidth="57dp"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="132dp" />
+
+    <TextView
+        android:id="@+id/top_author_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="24dp"
+        android:text="Benedikte Lundberg"
+        android:textColor="#ff9800"
+        app:layout_constraintLeft_toLeftOf="@+id/top_excerpt_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/top_story_image_view"
+        tools:layout_conversion_absoluteHeight="16dp"
+        tools:layout_conversion_absoluteWidth="123dp"
+        tools:layout_conversion_absoluteX="89dp"
+        tools:layout_conversion_absoluteY="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/ic_bookmark"
+        app:layout_constraintRight_toRightOf="@+id/top_story_image_view"
+        tools:layout_conversion_absoluteHeight="15dp"
+        tools:layout_conversion_absoluteWidth="15dp"
+        tools:layout_conversion_absoluteX="322dp"
+        tools:layout_conversion_absoluteY="132dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_share"
+        app:layout_constraintRight_toLeftOf="@+id/button2"
+        tools:layout_conversion_absoluteHeight="15dp"
+        tools:layout_conversion_absoluteWidth="15dp"
+        tools:layout_conversion_absoluteX="353dp"
+        tools:layout_conversion_absoluteY="132dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3" />
+
+
+</android.support.constraint.ConstraintLayout>

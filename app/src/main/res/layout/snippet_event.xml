@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/events_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/event" />
+
+    <FrameLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:alpha="0.3"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/events_image_view"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="343dp"
+        tools:layout_conversion_absoluteWidth="280dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="16dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/event_category_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/event_title_text_view"
+        app:layout_constraintRight_toRightOf="@+id/event_title_text_view"
+        app:layout_constraintTop_toTopOf="@+id/events_image_view"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_conversion_absoluteWidth="248dp"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="88dp"
+        tools:text="Music" />
+
+    <TextView
+        android:id="@+id/event_title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/linearLayout"
+        app:layout_constraintRight_toRightOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/event_category_text_view"
+        tools:layout_conversion_absoluteHeight="134dp"
+        tools:layout_conversion_absoluteWidth="248dp"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="152dp"
+        tools:text="A material metaphor is the unifying theory of a rationalized space" />
+
+</android.support.constraint.ConstraintLayout>

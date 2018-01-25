@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_action_home"/>
+
+    <item
+        android:title="Discover"
+        android:id="@+id/action_discover"
+        android:icon="@drawable/ic_action_discover"/>
+
+    <item
+        android:title="Videos"
+        android:id="@+id/action_videos"
+        android:icon="@drawable/ic_action_videos"/>
+
+
+    <item
+        android:title="Bookmarks"
+        android:id="@+id/action_bookmarks"
+        android:icon="@drawable/ic_action_bookmark"/>
+
+    <item
+        android:title="Preferences"
+        android:id="@+id/action_preferences"
+        android:icon="@drawable/ic_action_preferences"/>
+
+</menu>
